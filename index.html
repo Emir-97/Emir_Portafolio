@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<title>Portafolio</title>
+</head>
+<body>
+	<!-- Inicio -->
+	<section id="inicio">
+		<div class="contenido">
+			<header>
+				<div class="contenido-header">
+					<h1>Emir</h1>
+					<nav id="nav" class="">
+						<ul id="links">
+							<li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">HOME</a></li>
+							<li><a href="#sobremi" onclick="seleccionar(this)">ABOUT ME</a></li>
+							<li><a href="#servicios" onclick="seleccionar(this)">SERVICES</a></li>
+							<li><a href="#portafolio" onclick="seleccionar(this)">PROJECTS</a></li>
+							<li><a href="#contacto" onclick="seleccionar(this)">CONTACT</a></li>
+						</ul>
+					</nav>
+					<!-- Iconos del menu Responsive-->
+					<div id="icono-nav" onclick="responsiveMenu()">
+						<i class="fa-solid fa-bars"></i>
+					</div>
+					<!-- Iconos Redes Sociales -->
+					<div id="redes">
+						<a href="#"><i class="fa-brands fa-youtube"></i></a>
+						<a href="#"><i class="fa-brands fa-facebook"></i></a>
+						<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+					</div>
+				</div>
+			</header>
+			<div class="presentacion">
+				<p class="bienvenido">Welcome</p>
+				<h2>I am <span>Emir Zatta</span>, a software developer</h2>
+				<p class="descripcion">sadas</p>
+				<a href="#project">Go to Projects</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- About Me -->
+	<section id="sobremi">
+		<div class="contenedor-foto">
+			<img src="./assets/img/foto.jpeg">
+		</div>
+		<div class="sobremi">
+			<p>About me</p>
+			<h2>Hello, I am <span>Emir Zatta</span></h2>
+			<h3>Software Developer</h3>
+			<p>saddasdasdas</p>
+			<a href="C.V.Emir_Zatta.docx" download="CV">Dowload CV</a>
+		</div>
+	</section>
+
+	<!-- Services -->
+	<section id="servicios">
+		<h3 class="titulo-seccion">MY SERVICES</h3>
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Web Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Front-End</li>
+				</ul>
+				<p>Development of dynamic web pages using Javascript, CSS and HTML (with their respective frameworks Tailwind, Bootstrap).</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Web development</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Back-end</li>
+				</ul>
+				<p>Web development hand in hand with Python (Django) with MySQL and Postgresql.</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Data</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Analitycs</li>
+					<li>Engineer</li>
+				</ul>
+				<p>With fundamentals in SQL and NoSQL, I develop techniques of analysis and understanding of large volumes of data with MySQL, Postgresql and Mongodb. With knowledge in AWS for the development of a Data Engineer position.</p>
+			</div>
+		</div>
+<!-- Utilizar solo cuando se aprendan más habilidades -->
+<!--
+		<div class="fila">
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Web Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Back-end</li>
+				</ul>
+				<p>sadddddddddddd sad asf ds fsdf dsfaasdfdsafdsfsdafdsaf</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Web Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Back-end</li>
+				</ul>
+				<p>sadddddddddddd sad asf ds fsdf dsfaasdfdsafdsfsdafdsaf</p>
+			</div>
+
+			<div class="servicio">
+				<span class="icono"><i class="fa-solid fa-code"></i></span>
+				<h4>Web Design</h4>
+				<hr>
+				<ul class="servicios-tag">
+					<li>Web</li>
+					<li>Back-end</li>
+				</ul>
+				<p>sadddddddddddd sad asf ds fsdf dsfaasdfdsafdsfsdafdsaf</p>
+			</div>
+		</div>
+	-->
+	</section>
+
+	<!-- Skills -->
+	<div class="contenedor-skills" id="skills">
+		<h3>SKILLS</h3>
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>HTML y CSS</p>
+				<span class="porcentaje">90%</span>
+			</div>
+			<div class="barra">
+				<div id="html" class="barra-progreso1"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Javascript</p>
+				<span class="porcentaje">70%</span>
+			</div>
+			<div class="barra">
+				<div id="js" class="barra-progreso2"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Database</p>
+				<span class="porcentaje">70%</span>
+			</div>
+			<div class="barra">
+				<div id="db" class="barra-progreso3"></div>
+			</div>
+		</div>
+
+		<div class="skill">
+			<div class="info">
+				<p><span class="lista"></span>Python/Django</p>
+				<span class="porcentaje">70%</span>
+			</div>
+			<div class="barra">
+				<div id="py" class="barra-progreso4"></div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Projects -->
+	<section id="portafolio">
+		<h3 class="titulo-seccion">MY PROJECTS</h3>
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Pet_Shop"><img src="./assets/img/project1.PNG"></a>
+				<div class="info">
+					<h4>Pet Shop</h4>
+					<p>Web Design</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/task-list"><img src="./assets/img/project2.PNG"></a>
+				<div class="info">
+					<h4>Task List</h4>
+					<p>Web Design, DOM</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Regex_web"><img src="./assets/img/project3.PNG"></a>
+				<div class="info">
+					<h4>Regex web</h4>
+					<p>Web Design, Javascript practice with Regex expressions</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/English_dictionary"><img src="./assets/img/project4.PNG"></a>
+				<div class="info">
+					<h4>English Dictionary</h4>
+					<p>Django API, Web Design</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Netflix_clone"><img src="./assets/img/project5.PNG"></a>
+				<div class="info">
+					<h4>Netflix Clone</h4>
+					<p>Django, Web Design</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Fly_Bird"><img src="./assets/img/project6.PNG"></a>
+				<div class="info">
+					<h4>Flappy Bird</h4>
+					<p>Python, PyGame</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="fila">
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Pong"><img src="./assets/img/project7.PNG"></a>
+				<div class="info">
+					<h4>Pong</h4>
+					<p>Python Game, Pygame</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/Minecraft_Ursina"><img src="./assets/img/project8.PNG"></a>
+				<div class="info">
+					<h4>Minecraft</h4>
+					<p>Python Game, Ursina</p>
+				</div>
+			</div>
+
+			<div class="proyecto">
+				<div class="overlay"></div>
+				<a href="https://github.com/Emir-97/URL_Shortner"><img src="./assets/img/project9.PNG"></a>
+				<div class="info">
+					<h4>URL Shortner</h4>
+					<p>Django Web Design</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact -->
+	<section id="contacto">
+		<h3 class="titulo-seccion">Contact us now</h3>
+		<div class="contenedor-form">
+			<form action="">
+				<div class="fila mitad">
+					<input type="text" placeholder="Complete name" class="input-mitad">
+					<input type="text" placeholder="Email" class="input-mitad">
+				</div>
+
+				<div class="fila">
+					<input type="text" placeholder="Theme.." class="input-full">
+				</div>
+
+				<div class="fila">
+					<textarea name="" id="" cols="30" rows="10" placeholder="Your Message..." class="input-full"></textarea>
+				</div>
+
+				<input type="submit" value="Sent Message" class="btn-enviar">
+			</form>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<p>All rights reserved by Emir Zatta - 2022</p>
+		<div id="redes">
+			<a href="#"><i class="fa-brands fa-youtube"></i></a>
+			<a href="#"><i class="fa-brands fa-facebook"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+		</div>
+	</footer>
+
+	<script type="text/javascript" src="./assets/js/script.js"></script>
+</body>
+</html>
